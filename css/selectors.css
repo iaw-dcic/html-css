@@ -1,0 +1,34 @@
+.main {
+    margin-left: 10px;
+    display: block;
+    padding: 10px;
+    background-color: grey;
+    color: black;
+    width: 500px;
+    height: 320px;
+}
+
+div {
+    border: 2px solid rgba(100,100,100,1); 
+    padding: 10px;
+    margin: 5px;
+}
+
+.parent div {
+    color: red;
+}
+
+.parent > div {
+    color: blue;
+    background-color: rgba(100,100,100,0.5);
+}
+
+.parent ~ div {
+    color: rgba(0,250,0,0.8);
+    background-color: rgba(0,0,50,0.2);
+}
+
+.parent + div {
+    color: yellow;
+}
+
